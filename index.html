@@ -17,20 +17,45 @@
         <li><a href="http://twitter.com/elHongo14">Twitter</a></li>
         <li><a href="http://facebook.com/LuisHdzMshrm2">Facebook</a></li>
         <div class="title">
-            <img class="icon" src="./assets/images/icon.png" alt="PrograMOMOS">
-            PROGRAMOMOS - LOS "MEJORES" MEMES DE PROGRAMACIÓN
+            <a href="./index.html">
+                <img class="icon" src="./assets/images/icon.png" alt="PrograMOMOS">
+            </a>
+            PROGRAMOMOS
         </div>
-    </ul> 
-    <div class="memes" id="memes"></div>
-    <template id="meme">
-        <div class="memeCard">
-            <div class="memeContent">
-                <p>ID</p>
-                <img class="memeImg" src="" alt="">
-                <h3>Created</h3>
+    </ul>
+    <div class="dashboard">
+        <div class="profileCard">
+            <img src="./assets/images/defaultUser.jpg" alt="">
+            <div class="userInfo">
+                <div>Usuario anónimo</div>
+                <div class="loginBtn">
+                    <button>Acceder</button>
+                </div>
             </div>
         </div>
-    </template>
+        <div class="dashActions">
+            <a href="">Acción 1</a>
+            <a href="">Acción 2</a>
+            <a href="">Acción 3</a>
+        </div>
+    </div>
+    <div class="columns">
+        <div class="mainColumn">
+            <div class="memes" id="memes"></div>
+                <template id="meme">
+                    <div class="memeCard">
+                        <div class="memeContent">
+                            <p>ID</p>
+                            <img class="memeImg" src="" alt="">
+                            <h3>Created</h3>
+                        </div>
+                    </div>
+                </template>
+        </div>
+        <div class="comments">
+            <a href="">OWO</a>
+        </div>
+    </div>
     <script src="./assets/js/app.js"></script>
 </body>
 </html>
