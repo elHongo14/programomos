@@ -28,15 +28,15 @@
             <img src="./assets/images/defaultUser.jpg" alt="">
             <div class="userInfo">
                 <div>Usuario anónimo</div>
-                <div class="loginBtn">
+                <div class="loginBtn" onclick="window.location.reload()">
                     <button>Acceder</button>
                 </div>
             </div>
         </div>
         <div class="dashActions">
-            <a href="">Acción 1</a>
-            <a href="">Acción 2</a>
-            <a href="">Acción 3</a>
+            <a href=""><label for="">Novedades</label></a>
+            <a href=""><label for="">Destacados</label></a>
+            <a href=""><label for="">Ajustes</label></a>
         </div>
     </div>
     <div class="columns">
@@ -45,17 +45,36 @@
                 <template id="meme">
                     <div class="memeCard">
                         <div class="memeContent">
-                            <p>ID</p>
                             <img class="memeImg" src="" alt="">
+                            <div class="memeActions">
+                                <div class="tooltip">
+                                    <button class="likeBtn" id="likeBtn" onclick="likeAction()"><ion-icon name="heart"></ion-icon></button>
+                                    <span class="tooltiptext">Me gusta</span>
+                                </div>
+                                <p>ID</p>
+                            </div>
+                            <div class="uploadDate">
+                                Fecha de subida: 
+                                <h3>Created</h3>
+                            </div>
                             <h3>Created</h3>
                         </div>
                     </div>
                 </template>
+                <div class="refresh">
+                    <button class="refreshBtn" onclick="window.location.reload()"><ion-icon name="refresh-outline"></ion-icon></button>
+                </div>
         </div>
         <div class="comments">
-            <a href="">OWO</a>
+            <div class="commentText">No hay comentarios para mostrar.</div>
+            <div class="commentBox">
+                <input type="text" placeholder="Escribe un comentario..." name="" id="">
+                <button>Comentar</button>
+            </div>
         </div>
     </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="./assets/js/app.js"></script>
 </body>
 </html>

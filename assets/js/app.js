@@ -37,3 +37,7 @@ const dibujaMemes = () => {
     })
     memes_m.appendChild(fragment)
 }
+
+function likeAction() {
+    alert('Debes iniciar sesión para realizar esta acción.')
+}
